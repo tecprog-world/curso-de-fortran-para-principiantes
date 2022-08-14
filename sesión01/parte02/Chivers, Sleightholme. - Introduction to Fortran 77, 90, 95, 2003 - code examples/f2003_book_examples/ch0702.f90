@@ -1,17 +1,17 @@
 PROGRAM ch0702
 !
-! This program reads in three numbers and sums 
-! and averages them
+! Este programa pide tres numeros
+! y te entrega el total y el promedio
 !
 IMPLICIT NONE
-REAL :: N1,N2,N3,Average = 0.0, Total = 0.0
+REAL :: N1,N2,N3,Promedio = 0.0, Total = 0.0
 INTEGER :: N = 3
-  PRINT *,' Type in three numbers.'
-  PRINT *,' Separated by spaces or commas'
+  PRINT *,' Tipea tres numeros.'
+  PRINT *,' Separado por espacios o comas'
   READ *,N1,N2,N3
   Total= N1 + N2 + N3
-  Average=Total/N
-  PRINT *,'Total of numbers is ',Total
-  PRINT *,'Average of the numbers is ',Average
+  Promedio=Total/N
+  PRINT *,'La suma es: ',Total
+  PRINT *,'El promedio es: ',Promedio
 END PROGRAM ch0702
 

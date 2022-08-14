@@ -5,8 +5,8 @@ PROGRAM ch0701
 IMPLICIT NONE
 CHARACTER*20 :: First_Name
 !
-  PRINT *,' Type in your first name.'
-  PRINT *,' up to 20 characters'
+  PRINT *,' Tu nombre'
+  PRINT *,' maximo 20 caracteres'
   READ *,First_Name
   PRINT *,First_Name
 !
