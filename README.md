@@ -10,3 +10,5 @@ $ git add --all
 $ git commit -m "first commit"
 $ git push
 ```
+Este es un curso de Fortran que se desarrolla los días sábados y domingos desde las 14:00 horas (GMT -05:00 , Lima).
+![TW Interactive](/src/logo.jpg)
