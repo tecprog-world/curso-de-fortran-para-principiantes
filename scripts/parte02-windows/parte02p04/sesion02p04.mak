@@ -51,10 +51,11 @@ RSC=rc.exe
 OUTDIR=.\Release
 INTDIR=.\Release
 
-ALL : 
+ALL : "$(OUTDIR)\sesion02p04.exe"
 
 CLEAN : 
-	-@erase 
+	-@erase ".\Release\sesion02p04.exe"
+	-@erase ".\Release\ch0802.obj"
 
 "$(OUTDIR)" :
     if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
@@ -76,7 +77,13 @@ LINK32=link.exe
 LINK32_FLAGS=kernel32.lib /nologo /subsystem:console /incremental:no\
  /pdb:"$(OUTDIR)/sesion02p04.pdb" /machine:I386 /out:"$(OUTDIR)/sesion02p04.exe"\
  
-LINK32_OBJS=
+LINK32_OBJS= \
+	"$(INTDIR)/ch0802.obj"
+
+"$(OUTDIR)\sesion02p04.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
 
 !ELSEIF  "$(CFG)" == "sesion02p04 - Win32 Debug"
 
@@ -93,10 +100,13 @@ LINK32_OBJS=
 OUTDIR=.\Debug
 INTDIR=.\Debug
 
-ALL : 
+ALL : "$(OUTDIR)\sesion02p04.exe"
 
 CLEAN : 
-	-@erase 
+	-@erase ".\Debug\sesion02p04.exe"
+	-@erase ".\Debug\ch0802.obj"
+	-@erase ".\Debug\sesion02p04.ilk"
+	-@erase ".\Debug\sesion02p04.pdb"
 
 "$(OUTDIR)" :
     if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
@@ -118,7 +128,13 @@ LINK32=link.exe
 LINK32_FLAGS=kernel32.lib /nologo /subsystem:console /incremental:yes\
  /pdb:"$(OUTDIR)/sesion02p04.pdb" /debug /machine:I386\
  /out:"$(OUTDIR)/sesion02p04.exe" 
-LINK32_OBJS=
+LINK32_OBJS= \
+	"$(INTDIR)/ch0802.obj"
+
+"$(OUTDIR)\sesion02p04.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
 
 !ENDIF 
 
@@ -143,6 +159,17 @@ LINK32_OBJS=
 
 !ENDIF 
 
+################################################################################
+# Begin Source File
+
+SOURCE=\
+"\Users\tw\Documents\GitHub\curso-de-fortran-para-principiantes\sesión01\parte02\Chivers, Sleightholme. - Introduction to Fortran 77, 90, 95, 2003 - code examples\f2003_book_examples\ch0802.f90"
+
+"$(INTDIR)\ch0802.obj" : $(SOURCE) "$(INTDIR)"
+   $(F90) $(F90_PROJ) $(SOURCE)
+
+
+# End Source File
 # End Target
 # End Project
 ################################################################################
