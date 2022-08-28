@@ -21,6 +21,7 @@ Este es un curso orientado al aprendizaje de Fortran  77 y 90 desde Windows 10 y
 ![Inicialización para el arranque o apertura del IDE Microsoft Developer Studio desde Windows](/src/2022-08-28-0816.png)
 ![Apertura de archivo desde Microsoft Developer Studio](/src/figura02.png)
 ![Ejemplo de visualización del IDE Microsoft Developer Studio](/src/2022-08-14-113055.png)
+![Lectura de datos de archivo externo bajo la codificación de texto ASCII](/src/2022-08-28-0947.png)
 ## LITERATURA
 Se ha facilitado documentación disponible que se sugiere para el estudio del lenguaje Fortran.
 
