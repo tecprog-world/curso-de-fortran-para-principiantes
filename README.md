@@ -17,10 +17,12 @@ $ git push
 ```
 ## FORTRAN
 Este es un curso orientado al aprendizaje de Fortran  77 y 90 desde Windows 10 y Lubuntu 22.04 LTS.
+
+![Inicialización para el arranque o apertura del IDE Microsoft Developer Studio desde Windows](/src/2022-08-28-0816.png)
 ![Apertura de archivo desde Microsoft Developer Studio](/src/figura02.png)
-![Ejemplo desde Microsoft Developer Studio](/src/2022-08-14-113055.png)
+![Ejemplo de visualización del IDE Microsoft Developer Studio](/src/2022-08-14-113055.png)
 ## LITERATURA
-Se ha facilitado documentación disponible que se sugiere para el estudio del lenguaje.
+Se ha facilitado documentación disponible que se sugiere para el estudio del lenguaje Fortran.
 
 ## PARA MAYOR INFORMACIÓN
 Este es un curso dictado en 2022 y puede tener acceso a certificado brindado por la empresa.
