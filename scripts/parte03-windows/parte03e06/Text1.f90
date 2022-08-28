@@ -1,0 +1,5 @@
+PROGRAM miprograma
+    X = 123456.4567
+    PRINT 11, X
+11  FORMAT (F10.2)
+END
